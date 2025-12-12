@@ -259,7 +259,13 @@ const photos: photo[] = [
 ];
 
 const getAllPhotos = () => {
-  return photos;
+  const filteredData = photos.map((photo: photo) => ({
+    id: photo.id,
+    title: photo.title,
+    url: photo.url,
+  }));
+
+  return filteredData;
 };
 
 const getPhotoById = (id: string) => {
