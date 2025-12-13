@@ -1,4 +1,4 @@
-type photo = {
+export type photo = {
   id: string;
   title: string;
   url: string;
