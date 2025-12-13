@@ -7,7 +7,7 @@ export default async function Home( ) {
 
   const response = await fetch(`${process.env.BASE_API_URL}/photos`)
   const photos = await response.json();
-  console.log(photos);
+
   
   return (
     <div className="">
